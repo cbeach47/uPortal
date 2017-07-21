@@ -83,8 +83,9 @@ dependencies {
 }
 
 node {
-    version = "${nodejsVersion}"
-    download = true
+     version = nodejsVersion
+     download = true
+     workDir = file("${rootDir}/.gradle/nodejs")
 }
 
 processResources {
